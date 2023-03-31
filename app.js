@@ -2,6 +2,14 @@ function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 
-const element = <Welcome name="Yahya" />;
+function App() {
+  return (
+    <div>
+      <Welcome name="Ahmad" />
+      <Welcome name="Khaled" />
+      <Welcome name="Ali" />
+    </div>
+  );
+}
 
-ReactDOM.render(element, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
